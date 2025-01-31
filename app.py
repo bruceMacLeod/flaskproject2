@@ -9,7 +9,7 @@ UPLOADS_DIR = os.path.join(BASE_DATA_DIR, "uploads")
 
 @app.route('/')
 def hello_world():  # put application's code here
-    return SPECIES_DATA_DIR
+    return "Dir : " + SPECIES_DATA_DIR
 
 @app.route("/list_csv_files", methods=["GET"])
 def list_csv_files():
